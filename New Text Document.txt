@@ -1,0 +1,51 @@
+print('\n\n\nHello!\n')
+name=input('What is your name?:')
+print('\nHey '+name+"!\n")
+want=input('What do you want-\na calculator(1)or a madlib(2) or nothing(3):\n')
+if want=='1':
+    print('I am providing you a simple addition calculator but read the instructions carefully before using it.\nInstructions-\n>Enter only integers in First Number and Second Number.')
+    print('>Enter \'quit\' in Operator to exit the calculator')
+    k='quit'
+    while k=='quit':
+        a=float(input('Enter First Number:'))
+        b=input('Enter Operator:')
+        c=float(input('Enter Second Number:'))
+        if b=='/':
+            print(a/c)
+        elif b=='*':
+            print(a*c)
+        elif b=='-':
+            print(a-c)
+        elif b=='+':
+            print(a+c)
+        else :
+            print('Invalid Operator')
+        if b == 'quit':
+            break
+
+
+    print('\nCome back again.\nGoodbye!')
+
+
+
+elif want=='2':
+    print('Here you go.....\nRoses are {color1}.\nViolets are {color2}.\nI {think_yourself} you.')
+    c=input('color1:')
+    d=input('color2:')
+    e=input('think yourself:')
+    print('\nRoses are '+c+'.Violets are '+d+'.I '+e+' you.')
+    if c=='red' and d=='blue':
+        print('Ahh!You got it correct.')
+    else:
+        print('You got it wrong bro.')
+    if e=='love':
+        print('\nI love you too cutie.')
+    elif e=='hate':
+        print('\nI hate you too. ')
+    else:
+        print('You got it wrong bro.')
+    print('\nGoodbye!\nCome back again')
+elif want=='3':
+    print('You are rude\nGoodbye')
+else:
+    print('I can\'t understand.\nGoodbye!')
